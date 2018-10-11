@@ -1,7 +1,7 @@
 
-const job_controller = require('../controllers/home_job_controller');
-const search_controller = require('../controllers/search_controller');
-const profile_controller = require('../controllers/profile_controller');
+import job_controller from '../controllers/home_job_controller';
+import search_controller from '../controllers/search_controller';
+import profile_controller from '../controllers/profile_controller';
 
 const routes = {
     '#/job': job_controller,
@@ -9,4 +9,6 @@ const routes = {
     '#/profile': profile_controller
 }
 
-module.exports = routes
+export { routes } ;
+
+

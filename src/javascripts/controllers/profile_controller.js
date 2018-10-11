@@ -1,11 +1,11 @@
 
 
-const profile_template = require('../views/profile.html');
+import profile_template from '../views/profile.html';
 
 const render = () => {
     $('.home-container main').html(profile_template);
 }
 
-module.exports = {
+export default {
     render
 }

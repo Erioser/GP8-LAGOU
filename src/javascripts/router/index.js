@@ -1,7 +1,8 @@
 
 // 实现路由工具
 
-const routes = require('./route')
+import {  routes }  from './route'
+
 
 class Router {
 
@@ -62,6 +63,5 @@ class Router {
 
 }
 
-
-module.exports = Router
+export default Router;
 

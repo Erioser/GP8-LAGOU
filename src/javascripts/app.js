@@ -4,10 +4,12 @@
 
 //rem
 // require('./modules/flexible');
+// import './modules/flexible'
 
-const Router = require('./router');
+import Router from './router'
 
-const home_controller = require('./controllers/home_controller');
+
+import home_controller from './controllers/home_controller';
 
 // 渲染视图
 home_controller.render(); 

@@ -1,11 +1,11 @@
 
 
-const search_template = require('../views/search.html');
+import search_template from '../views/search.html';
 
 const render = () => {
     $('.home-container main').html(search_template);
 }
 
-module.exports = {
+export default {
     render
 }

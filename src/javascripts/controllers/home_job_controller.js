@@ -1,7 +1,7 @@
 
-const home_job_template = require('../views/home-job.html');
-const home_job_content_template = require('../views/home-job-content.html');
-const home_job_model    = require('../models/home_job_model');
+import home_job_template from '../views/home-job.html';
+import home_job_content_template from '../views/home-job-content.html';
+import home_job_model    from '../models/home_job_model';
 
 const render = () => {
     
@@ -37,6 +37,6 @@ const loadMore = (_pageNo) => { // 点击加载更多每次加载新的数据
     })
 }
 
-module.exports = {
+export default {
     render
 }

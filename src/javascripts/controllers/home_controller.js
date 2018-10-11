@@ -1,5 +1,5 @@
 // home 视图的控制器
-const home_template = require('../views/home.html'); 
+import home_template from '../views/home.html'; 
 
 // const job_controller = require('./home_job_controller'); 
 // const search_controller = require('./search_controller'); 
@@ -29,9 +29,7 @@ const render = () => {
 //     })
 // }
 
-module.exports = {
-    render
-}
+export default { render }
 
 
 // 需求： 显示home  MVC

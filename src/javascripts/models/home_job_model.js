@@ -30,6 +30,6 @@ const job_list = (pageNo = 1) => {
 
 }
 
-module.exports = {
+export default {
     job_list
 }
