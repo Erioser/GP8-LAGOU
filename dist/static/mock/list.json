@@ -1,0 +1,243 @@
+{
+    "content": {
+        "data": {
+            "isLogin": false,
+            "page": {
+                "pageSize": 15,
+                "start": "0",
+                "result": [
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4438739,
+                        "positionName": "中高级java开发工程师",
+                        "city": "杭州",
+                        "createTime": "今天 14:42",
+                        "salary": "13k-25k",
+                        "companyId": 357605,
+                        "companyLogo": "i/image2/M01/8D/8E/CgotOVubboeAG1L0AACNTwtwYYY906.jpg",
+                        "companyName": "巨胳膊",
+                        "companyFullName": "杭州巨擘科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4434533,
+                        "positionName": "UE4开发工程师",
+                        "city": "杭州",
+                        "createTime": "今天 14:42",
+                        "salary": "7k-14k",
+                        "companyId": 132798,
+                        "companyLogo": "i/image/M00/32/D7/CgqKkVdPxYmAINzDAAAexsrs1Vo191.jpg",
+                        "companyName": "凡聚科技",
+                        "companyFullName": "浙江凡聚科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4425541,
+                        "positionName": "PHP开发工程师",
+                        "city": "上海",
+                        "createTime": "今天 14:40",
+                        "salary": "8k-15k",
+                        "companyId": 345482,
+                        "companyLogo": "i/image2/M00/46/1C/CgoB5lrUHUuAbLUAAAARBtF9Hhs138.png",
+                        "companyName": "弈新软件",
+                        "companyFullName": "上海弈新信息科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4425552,
+                        "positionName": "前端开发工程师",
+                        "city": "上海",
+                        "createTime": "今天 14:40",
+                        "salary": "8k-15k",
+                        "companyId": 345482,
+                        "companyLogo": "i/image2/M00/46/1C/CgoB5lrUHUuAbLUAAAARBtF9Hhs138.png",
+                        "companyName": "弈新软件",
+                        "companyFullName": "上海弈新信息科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4424692,
+                        "positionName": "淘宝运营",
+                        "city": "深圳",
+                        "createTime": "今天 14:40",
+                        "salary": "5k-9k",
+                        "companyId": 366084,
+                        "companyLogo": "i/image/M00/8A/E7/CgpEMlrUFgWAWHm-AA-8-wnPBeU117.jpg",
+                        "companyName": "爬爬",
+                        "companyFullName": "深圳市爬爬宠物科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4424734,
+                        "positionName": "嵌入式软件工程师",
+                        "city": "深圳",
+                        "createTime": "今天 14:40",
+                        "salary": "7k-12k",
+                        "companyId": 366084,
+                        "companyLogo": "i/image/M00/8A/E7/CgpEMlrUFgWAWHm-AA-8-wnPBeU117.jpg",
+                        "companyName": "爬爬",
+                        "companyFullName": "深圳市爬爬宠物科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4431740,
+                        "positionName": "用户运营及分析专家",
+                        "city": "北京",
+                        "createTime": "今天 14:38",
+                        "salary": "25k-35k",
+                        "companyId": 1650,
+                        "companyLogo": "i/image/M00/01/59/Cgp3O1Zn9kCAAW4jAABX8W4A-fw360.jpg",
+                        "companyName": "联想集团",
+                        "companyFullName": "联想（北京）有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4430253,
+                        "positionName": "Consulting Partner",
+                        "city": "北京",
+                        "createTime": "今天 14:38",
+                        "salary": "30k-40k",
+                        "companyId": 1650,
+                        "companyLogo": "i/image/M00/01/59/Cgp3O1Zn9kCAAW4jAABX8W4A-fw360.jpg",
+                        "companyName": "联想集团",
+                        "companyFullName": "联想（北京）有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4425300,
+                        "positionName": "高级结构工程师",
+                        "city": "深圳",
+                        "createTime": "今天 14:38",
+                        "salary": "10k-20k",
+                        "companyId": 125911,
+                        "companyLogo": "i/image/M00/23/44/Cgp3O1cXHIqAeaZIAAA0WI9VaCE699.png",
+                        "companyName": "兴天实业",
+                        "companyFullName": "兴天实业（深圳）有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4406993,
+                        "positionName": "UI设计实习生",
+                        "city": "北京",
+                        "createTime": "今天 14:34",
+                        "salary": "2k-3k",
+                        "companyId": 520,
+                        "companyLogo": "image1/M00/00/03/CgYXBlTUV_uAY85GAAAVtFKXIv8322.jpg",
+                        "companyName": "小米",
+                        "companyFullName": "北京小米科技有限责任公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4397847,
+                        "positionName": "副总裁助理（海外业务方向）",
+                        "city": "北京",
+                        "createTime": "今天 14:34",
+                        "salary": "10k-20k",
+                        "companyId": 520,
+                        "companyLogo": "image1/M00/00/03/CgYXBlTUV_uAY85GAAAVtFKXIv8322.jpg",
+                        "companyName": "小米",
+                        "companyFullName": "北京小米科技有限责任公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4429478,
+                        "positionName": "DSP音频工程师",
+                        "city": "广州",
+                        "createTime": "今天 14:33",
+                        "salary": "10k-20k",
+                        "companyId": 68149,
+                        "companyLogo": "image1/M00/28/36/CgYXBlVemjCAFTClAAAeAgOhVPc133.jpg",
+                        "companyName": "拿火音乐",
+                        "companyFullName": "广州市拿火信息科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4396961,
+                        "positionName": "音频算法工程师",
+                        "city": "广州",
+                        "createTime": "今天 14:33",
+                        "salary": "10k-20k",
+                        "companyId": 68149,
+                        "companyLogo": "image1/M00/28/36/CgYXBlVemjCAFTClAAAeAgOhVPc133.jpg",
+                        "companyName": "拿火音乐",
+                        "companyFullName": "广州市拿火信息科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4436543,
+                        "positionName": "高级用户运营经理",
+                        "city": "北京",
+                        "createTime": "今天 14:33",
+                        "salary": "20k-30k",
+                        "companyId": 133382,
+                        "companyLogo": "i/image2/M01/78/28/CgotOVtqUj-AfFsQAAAnzcBVDMA325.png",
+                        "companyName": "百乘集团",
+                        "companyFullName": "北京百乘金科科技有限公司"
+                    },
+                    {
+                        "logger": {
+                            "traceCapable": true,
+                            "name": "com.lagou.entity.mobile.MobilePosition"
+                        },
+                        "positionId": 4436663,
+                        "positionName": "高级产品运营经理",
+                        "city": "北京",
+                        "createTime": "今天 14:33",
+                        "salary": "20k-30k",
+                        "companyId": 133382,
+                        "companyLogo": "i/image2/M01/78/28/CgotOVtqUj-AfFsQAAAnzcBVDMA325.png",
+                        "companyName": "百乘集团",
+                        "companyFullName": "北京百乘金科科技有限公司"
+                    }
+                ],
+                "totalCount": "324881",
+                "pageNo": 1
+            }
+        },
+        "rows": []
+    },
+    "message": "第1页数据,每页15条, 查询成功!",
+    "state": 1
+}
