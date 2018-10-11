@@ -21,7 +21,9 @@ const handleContentScroll = () => { // 处理整个程序滚动等等逻辑
     getJobList(); // 初始加载第一页
 
     // 实力和bscroll
-    let _job_scroll = new BScroll('main');
+    let _job_scroll = new BScroll('main', {
+        startY: -80
+    });
 }
 
 const getJobList = async () => { // 获取某一页数据然后渲染出来

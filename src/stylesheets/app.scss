@@ -11,9 +11,51 @@ body { background: #fff; overflow: auto; }
 #root, .home-container { height: 100%; }
 
 
+@keyframes loading {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
 
 
 
+// 下拉去刷新  放手就刷新 正在加载。。
+
+.scroll-info {
+    height: 1.066667rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-info.go-refresh {
+    .icon-arrowsdown { 
+        display: block;
+    }
+    .icon-loading { 
+        display: none;
+    }
+}
+
+
+.scroll-info.release-refresh {
+    .icon-arrowsdown { 
+        display: block;
+        transform: rotate(180deg);
+    }
+    .icon-loading { 
+        display: none;
+    }
+}
+
+.scroll-info.loading {
+    .icon-arrowsdown { 
+        display: none;
+    }
+    .icon-loading { 
+        display: block;
+        animation: loading 0.8s linear 0s infinite;
+    }
+}
 
 
 
