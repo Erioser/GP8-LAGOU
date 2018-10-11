@@ -1,4 +1,5 @@
 
+//jack-detail
 //rem
 // require('./modules/flexible');
 
