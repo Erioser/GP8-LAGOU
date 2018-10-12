@@ -32,10 +32,16 @@ const handleContentScroll = async () => { // 处理整个程序滚动等等逻�
 
     let _o_scroll_info_top = $('.scroll-info--top') // 下拉刷新的dom元素
     let _o_scroll_info_top_title = _o_scroll_info_top.find('.scroll-info__title') // 下拉刷新的文字dom
-    let _top_class = 'scroll-info--top scroll-info ' // 下拉刷新元素的初始类名
+    
+    let _o_scroll_info_bottom = $('.scroll-info--bottom') // 下拉刷新的dom元素
+    let _o_scroll_info_bottom_title = _o_scroll_info_bottom.find('.scroll-info__title') // 下拉刷新的文字dom
 
+    let _top_class = 'scroll-info--top scroll-info ' // 下拉刷新元素的初始类名
     let _scroll_y_sta = 'go' // 下拉刷新的状态
 
+
+    let _scroll_bottom_sta = false;
+    
     _job_scroll.on('scroll', ({ x, y }) => {
         if ( y > 0 && _scroll_y_sta !== 'release') { // 放手就刷新
             // 使用状态判断是放在符合条件还不断的更改视图
@@ -43,21 +49,42 @@ const handleContentScroll = async () => { // 处理整个程序滚动等等逻�
             _o_scroll_info_top.prop('class', _top_class + 'release-refresh')
             _o_scroll_info_top_title.html('放开就刷新')
         }
+
+        _scroll_bottom_sta = false;
+        if ( _job_scroll.maxScrollY - y > 0 ) {
+            _scroll_bottom_sta = true;
+            _o_scroll_info_bottom_title.html('放开去加载')
+        }
     })
 
     _job_scroll.on('scrollEnd', async ({ x, y }) => {
         if ( y > -80 && y < 0 ) { // 没有完全拉出刷新元素
             // 塞回去
             _job_scroll.scrollTo(0, -80, 300)
-        }else if ( y === 0 ) { // 说明该获取数据去了
-            _o_scroll_info_top.prop('class', _top_class + 'loading')
-            _o_scroll_info_top_title.html('正在加载')
-            await refreshJobList()
-            _o_scroll_info_top.prop('class', _top_class + 'go-refresh')
-            _o_scroll_info_top_title.html('下拉就刷新')
-            _scroll_y_sta = 'go'
-            _job_scroll.refresh()
+        }else if ( y === 0  ) { // 说明该获取数据去了
+            if ( _scroll_y_sta === 'release' ) {
+                _o_scroll_info_top.prop('class', _top_class + 'loading')
+                _o_scroll_info_top_title.html('正在加载')
+                await refreshJobList()
+                _o_scroll_info_top.prop('class', _top_class + 'go-refresh')
+                _o_scroll_info_top_title.html('下拉就刷新')
+                _scroll_y_sta = 'go'
+                _job_scroll.refresh()
+            }     
             _job_scroll.scrollTo(0, -80, 300)
+        }
+
+
+        if ( _job_scroll.maxScrollY - y === 0 && _scroll_bottom_sta ) {
+            
+            _o_scroll_info_bottom_title.html('正在加载')
+            _o_scroll_info_bottom.addClass('loading')
+            _pageNo ++
+            await getJobList();
+            _o_scroll_info_bottom_title.html('上拉去加载')
+            _o_scroll_info_bottom.removeClass('loading')
+            _job_scroll.refresh()
+
         }
     })
 }

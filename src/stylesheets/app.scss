@@ -28,7 +28,7 @@ body { background: #fff; overflow: auto; }
     background: #f7f7f7;
 }
 
-.scroll-info.go-refresh {
+.scroll-info--top.go-refresh {
     .icon-arrowsdown { 
         display: block;
     }
@@ -38,7 +38,7 @@ body { background: #fff; overflow: auto; }
 }
 
 
-.scroll-info.release-refresh {
+.scroll-info--top.release-refresh {
     .icon-arrowsdown { 
         display: block;
         transform: rotate(180deg);
@@ -48,7 +48,7 @@ body { background: #fff; overflow: auto; }
     }
 }
 
-.scroll-info.loading {
+.scroll-info--top.loading {
     .icon-arrowsdown { 
         display: none;
     }
@@ -59,5 +59,11 @@ body { background: #fff; overflow: auto; }
 }
 
 
+.scroll-info--bottom {
+    .icon-loading { display: none; }
+}
 
+.scroll-info--bottom.loading {
+    .icon-loading { display: block; }
+}
 
