@@ -4,6 +4,8 @@
 
 @import './modules/home';
 
+@import './modules/test';
+
 body { background: #fff; overflow: auto; }
 
 
@@ -66,4 +68,6 @@ body { background: #fff; overflow: auto; }
 .scroll-info--bottom.loading {
     .icon-loading { display: block; }
 }
+
+
 

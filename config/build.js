@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 
 // require函数的返回值就是模块暴露的东西
 const webpack_config = require('./webpack_config')
-webpack_config.mode = "production"
+webpack_config.mode = "production" // js代码会自动压缩
 // 全局配置
 
 const config = {
@@ -11,3 +11,7 @@ const config = {
     webpack_config
 }
 module.exports = config;
+
+
+
+

@@ -6,6 +6,8 @@ const webpack = require('webpack-stream');
 const rev = require('gulp-rev');
 const revCollector = require('gulp-rev-collector');
 const gulpSequence = require('gulp-sequence');
+const autoprefixer = require('gulp-autoprefixer')
+const htmlmin      = require('gulp-htmlmin')
 // 全局的配置
 const config = require('./config/build');
 
@@ -20,8 +22,11 @@ gulp.task('copy:static', () => {
 // 输出html页面
 gulp.task('copy:html', () => {
     return gulp.src(['./dist/rev/**/*.json', './src/*.html'])
+            .pipe(htmlmin({
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true
+            }))
             .pipe(revCollector())
-
             .pipe( gulp.dest('dist') );
 })
 
@@ -29,8 +34,11 @@ gulp.task('copy:html', () => {
 gulp.task('compile:scss', () => {
     return gulp.src('./src/stylesheets/*.scss')
             .pipe(sass(sass_config).on('error', sass.logError))
+            .pipe(autoprefixer({
+                browsers: ['last 4 versions'],
+                cascade: false
+            }))
             .pipe(rev())
-            
             .pipe(gulp.dest('./dist/stylesheets'))
             .pipe(rev.manifest())
             .pipe(gulp.dest('./dist/rev/stylesheets'))
