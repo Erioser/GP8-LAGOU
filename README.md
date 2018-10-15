@@ -39,15 +39,13 @@
 * stylesheets 放入scss文件
     modules 放入scss独立模块文化
     yo      yo框架的scss代码，可以选择性的引入
-    app.scss scss入口文件
+    app.scss..... scss各个页面的入口文件
 * javascript js开发目录
     controllers 控制层逻辑代码
     views       视图层html文件（引入到js中，使用了string-loader处理成字符串）
     models      数据层文件，提供数据或者获取数据的方法
-    router      Router实现
-        index.js Router类的实现
-        route.js 路由表配置  （配置hash路径与控制器的对应关系）
-    app.js     项目js入口文件，可以是多个，需要在config中配置多入口
+    
+    app.js...     各个页面的js入口文件
 
 4. config 配置文件
 
