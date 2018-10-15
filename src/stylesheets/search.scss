@@ -1,0 +1,10 @@
+@import './yo/usage/core/reset.scss';
+@import './modules/home';
+.search {
+    background: red;
+}
+
+.footer__item:nth-of-type(2) {
+    color: #00b38a;
+    background-color: #e7f3f0;
+}

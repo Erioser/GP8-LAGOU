@@ -1,0 +1,9 @@
+@import './yo/usage/core/reset.scss';
+@import './modules/home';
+.profile {
+    background: red;
+}
+.footer__item:last-of-type {
+    color: #00b38a;
+    background-color: #e7f3f0;
+}

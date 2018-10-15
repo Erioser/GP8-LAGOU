@@ -1,4 +1,6 @@
 
+#root, .home-container { height: 100%; }
+
 .home-container {
     display: flex; flex-direction: column;
     justify-content: space-between;
@@ -42,10 +44,7 @@ main {
     transform: translate(0px,-3px);
 }
 
-.footer__item.active {
-    color: #00b38a;
-    background-color: #e7f3f0;
-}
+
 
 .job-item {
     height: 2.426667rem;padding: .373333rem;

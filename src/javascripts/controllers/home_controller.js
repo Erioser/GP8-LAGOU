@@ -1,9 +1,6 @@
 // home 视图的控制器
 import home_template from '../views/home.html'; 
 
-// const job_controller = require('./home_job_controller'); 
-// const search_controller = require('./search_controller'); 
-// const profile_controller = require('./profile_controller'); 
 
 // 负责将home视图模板渲染在对应的地方
 const render = () => {
@@ -11,13 +8,8 @@ const render = () => {
     // console.log(homeTemplate)
     document.querySelector('#root').innerHTML = home_template;
     
-    // 渲染home的job视图
-    // job_controller.render();
+    
 
-    // switchTab();
-    $('.home-title').tap(function () {
-        router.switch('#/job');
-    })
 }
 
 // // 切换标签
